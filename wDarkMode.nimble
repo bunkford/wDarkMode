@@ -17,7 +17,3 @@ requires "winim >= 3.9.0"
 
 task examples, "Build and run examples":
   exec "nim c -r examples/darkmode.nim"
-
-task docs, "Generate documentation":
-  # Note: Requires wNim and winim to be installed
-  exec "nim doc --outdir:docs src/wDarkMode.nim"

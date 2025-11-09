@@ -2,6 +2,12 @@
 
 Dark mode support module for [wNim](https://github.com/khchen/wNim) applications on Windows 10/11.
 
+## Note
+
+The current theming targets core controls, but many controls may still render poorly or require owner‑draw/custom handling to look correct.
+
+Contributions welcome: if you can expand control coverage, fix theming edge cases, or add examples, please open a pull request.
+
 ## Features
 
 * ✨ Automatic detection of Windows dark mode settings
@@ -25,7 +31,6 @@ Clone this repository and build your project with the wDarkMode source:
 
 ```bash
 git clone https://github.com/bunkford/wDarkMode.git
-nim c -r --path:wDarkMode/src your_app.nim
 ```
 
 ## Requirements
@@ -106,7 +111,6 @@ else:
   panel.foregroundColor = wLightModeForeground
 ```
 
-## API Reference
 
 ### Main Functions
 
@@ -147,14 +151,14 @@ Check if Windows is using high contrast mode.
 
 ### Color Constants
 
-| Constant | RGB Value | Description |
-|----------|-----------|-------------|
-| `wDarkModeBackground` | RGB(43, 43, 43) | Main window background for dark mode |
-| `wDarkModeForeground` | RGB(255, 255, 255) | White text for dark mode |
-| `wDarkModeControl` | RGB(60, 60, 60) | Control background for dark mode |
-| `wLightModeBackground` | RGB(240, 240, 240) | Light gray background for light mode |
-| `wLightModeForeground` | RGB(0, 0, 0) | Black text for light mode |
-| `wLightModeControl` | RGB(255, 255, 255) | White control background for light mode |
+| Constant | RGB Value | Hex | Sample |
+|----------|-----------:|-----:|:------:|
+| `wDarkModeBackground` | RGB(43, 43, 43) | `#2B2B2B` | <div title="#2B2B2B" style="width:48px;height:24px;background:#2B2B2B;border:1px solid #ccc;border-radius:4px;"></div> |
+| `wDarkModeForeground` | RGB(255, 255, 255) | `#FFFFFF` | <div title="#FFFFFF" style="width:48px;height:24px;background:#FFFFFF;border:1px solid #ccc;border-radius:4px;"></div> |
+| `wDarkModeControl` | RGB(60, 60, 60) | `#3C3C3C` | <div title="#3C3C3C" style="width:48px;height:24px;background:#3C3C3C;border:1px solid #ccc;border-radius:4px;"></div> |
+| `wLightModeBackground` | RGB(240, 240, 240) | `#F0F0F0` | <div title="#F0F0F0" style="width:48px;height:24px;background:#F0F0F0;border:1px solid #ccc;border-radius:4px;"></div> |
+| `wLightModeForeground` | RGB(0, 0, 0) | `#000000` | <div title="#000000" style="width:48px;height:24px;background:#000000;border:1px solid #ccc;border-radius:4px;"></div> |
+| `wLightModeControl` | RGB(255, 255, 255) | `#FFFFFF` | <div title="#FFFFFF" style="width:48px;height:24px;background:#FFFFFF;border:1px solid #ccc;border-radius:4px;"></div> |
 
 ## Examples
 
