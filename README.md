@@ -22,7 +22,7 @@ Contributions welcome: if you can expand control coverage, fix theming edge case
 ### Via Nimble
 
 ```bash
-nimble install wDarkMode
+nimble install https://github.com/bunkford/wDarkMode@#HEAD
 ```
 
 ### Manual Installation
