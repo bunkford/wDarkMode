@@ -1,0 +1,41 @@
+# Nim compiler outputs
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.pdb
+
+# Nim cache directories
+nimcache/
+nimblecache/
+
+# Build outputs
+*.out
+*.app
+*.exe.manifest
+
+# Documentation outputs
+docs/
+htmldocs/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Nimble package manager
+.nimble/
+
+# Test outputs
+tests/test_results/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
